@@ -42,6 +42,7 @@ body{
 .parcial{background:#7c3aed;color:white;font-weight:700}
 .recuperatorio{background:#ea580c;color:white;font-weight:700}
 .recordatorio{background:#f0abfc;color:#701a75;font-weight:600}
+.week-sep{grid-column:1/-1;height:1px;background:#cbd5e1;margin:2px 0}
 .importante{
   background:#dc2626;color:white;border:4px solid #facc15;
   box-shadow:0 0 20px rgba(220,38,38,.45);transform:scale(1.02)
@@ -67,6 +68,7 @@ body{
     grid-template-columns:1fr;gap:4px
   }
   .empty{display:none}
+  .week-sep{display:none}
   .day{
     min-height:auto;padding:8px 10px;border-radius:8px;
     display:flex;flex-wrap:wrap;align-items:center;gap:4px
@@ -128,6 +130,7 @@ body{
 <div class="day"><div class="day-number">4</div><div class="event presencial">Seguridad 19-22</div></div>
 <div class="day"><div class="day-number">5</div></div>
 <div class="day"><div class="day-number">6</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">7</div></div>
 <div class="day"><div class="day-number">8</div><div class="event presencial">TPP Presencial</div></div>
 <div class="day"><div class="day-number">9</div><div class="event presencial">Gestion 16-22</div></div>
@@ -135,6 +138,7 @@ body{
 <div class="day"><div class="day-number">11</div><div class="event presencial">Seguridad 19-22</div></div>
 <div class="day"><div class="day-number">12</div></div>
 <div class="day"><div class="day-number">13</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">14</div></div>
 <div class="day"><div class="day-number">15</div></div>
 <div class="day"><div class="day-number">16</div><div class="event presencial">Gestion 16-22</div></div>
@@ -142,6 +146,7 @@ body{
 <div class="day"><div class="day-number">18</div><div class="event presencial">Seguridad 19-22</div></div>
 <div class="day"><div class="day-number">19</div></div>
 <div class="day"><div class="day-number">20</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">21</div><div class="event checkpoint">Checkpoint 1</div></div>
 <div class="day"><div class="day-number">22</div><div class="event presencial">TPP Presencial</div></div>
 <div class="day"><div class="day-number">23</div><div class="event presencial">Gestion 16-22</div></div>
@@ -149,6 +154,7 @@ body{
 <div class="day"><div class="day-number">25</div><div class="event presencial">Seguridad 19-22</div></div>
 <div class="day"><div class="day-number">26</div></div>
 <div class="day"><div class="day-number">27</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">28</div></div>
 <div class="day"><div class="day-number">29</div><div class="event presencial">Ultimo TPP Presencial</div></div>
 <div class="day"><div class="day-number">30</div><div class="event presencial">Gestion 16-22</div></div>
@@ -169,20 +175,23 @@ body{
 <div class="day"><div class="day-number">2</div><div class="event presencial">Seguridad 19-22</div></div>
 <div class="day"><div class="day-number">3</div></div>
 <div class="day"><div class="day-number">4</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">5</div></div>
 <div class="day"><div class="day-number">6</div><div class="event virtual">TPP Virtual</div></div>
 <div class="day"><div class="day-number">7</div><div class="event presencial">Gestion 16-22</div></div>
 <div class="day"><div class="day-number">8</div></div>
 <div class="day"><div class="day-number">9</div><div class="event presencial">Seguridad 19-22</div></div>
-<div class="day"><div class="day-number">10</div></div>
-<div class="day"><div class="day-number">11</div></div>
+<div class="day"><div class="day-number">10</div><div class="event feriado">Finde largo</div><div class="event recordatorio">Estudiar Team Room</div></div>
+<div class="day"><div class="day-number">11</div><div class="event feriado">Finde largo</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">12</div><div class="event feriado">Feriado Nacional</div></div>
 <div class="day"><div class="day-number">13</div></div>
-<div class="day"><div class="day-number">14</div><div class="event presencial">Gestion 16-22</div></div>
+<div class="day"><div class="day-number">14</div><div class="event presencial">Gestion 16-22</div><div class="event checkpoint">Charla Team Room</div></div>
 <div class="day"><div class="day-number">15</div><div class="event recordatorio">Estudiar Economia</div></div>
 <div class="day"><div class="day-number">16</div><div class="event presencial">Seguridad 19-22</div></div>
 <div class="day"><div class="day-number">17</div></div>
 <div class="day"><div class="day-number">18</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">19</div><div class="event checkpoint">Checkpoint 2</div></div>
 <div class="day"><div class="day-number">20</div></div>
 <div class="day"><div class="day-number">21</div><div class="event presencial">Gestion 16-22</div></div>
@@ -194,6 +203,7 @@ body{
 <div class="day"><div class="day-number">23</div><div class="event presencial">Seguridad 19-22</div></div>
 <div class="day"><div class="day-number">24</div></div>
 <div class="day"><div class="day-number">25</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">26</div></div>
 <div class="day"><div class="day-number">27</div></div>
 <div class="day"><div class="day-number">28</div><div class="event presencial">Gestion 16-22</div></div>
@@ -215,6 +225,7 @@ body{
 <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
 <div class="day"><div class="day-number">1</div></div>
 <div class="day"><div class="day-number">2</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">3</div></div>
 <div class="day"><div class="day-number">4</div><div class="event presencial">Gestion 16-22</div></div>
 <div class="day"><div class="day-number">5</div></div>
@@ -226,6 +237,7 @@ body{
 <div class="day"><div class="day-number">7</div></div>
 <div class="day"><div class="day-number">8</div></div>
 <div class="day"><div class="day-number">9</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">10</div><div class="event checkpoint">Checkpoint 3</div></div>
 <div class="day"><div class="day-number">11</div><div class="event presencial">Gestion 16-22</div></div>
 <div class="day"><div class="day-number">12</div></div>
@@ -233,6 +245,7 @@ body{
 <div class="day"><div class="day-number">14</div><div class="event presencial">Seguridad 19-22</div></div>
 <div class="day"><div class="day-number">15</div></div>
 <div class="day"><div class="day-number">16</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">17</div></div>
 <div class="day"><div class="day-number">18</div><div class="event presencial">Gestion 16-22</div></div>
 <div class="day"><div class="day-number">19</div><div class="event recordatorio">Estudiar Economia (Recup.)</div></div>
@@ -244,6 +257,7 @@ body{
 <div class="day"><div class="day-number">21</div><div class="event presencial">Seguridad 19-22</div></div>
 <div class="day"><div class="day-number">22</div></div>
 <div class="day"><div class="day-number">23</div><div class="event feriado">Feriado Nacional</div></div>
+<div class="week-sep"></div>
 <div class="day"><div class="day-number">24</div></div>
 <div class="day importante">
   <div class="importante-label">MUY IMPORTANTE</div>
