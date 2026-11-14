@@ -28,11 +28,18 @@ body{
   text-align:center;font-weight:700;padding:8px 4px;background:#e2e8f0;border-radius:8px;font-size:13px
 }
 .day{
-  min-height:100px;background:#fff;border:1px solid #cbd5e1;border-radius:10px;padding:6px
+  min-height:100px;background:#fff;border:1px solid #cbd5e1;border-radius:10px;padding:6px;
+  position:relative;overflow:hidden
 }
 .day-number{font-weight:700;margin-bottom:4px;font-size:14px}
 .day-name{display:none}
 .empty{background:transparent;border:none}
+.tachado-completo .day:not(.empty),.day.tachado{opacity:.55;background:#f1f5f9}
+.tachado-completo .day:not(.empty)::after,.day.tachado::after{
+  content:"";position:absolute;left:-10%;top:50%;width:120%;height:2px;
+  background:#64748b;transform:rotate(-18deg);pointer-events:none
+}
+.tachado-completo .day-number,.tachado .day-number{text-decoration:line-through}
 .event{
   font-size:11px;padding:3px 5px;border-radius:6px;margin-bottom:3px;line-height:1.3;word-break:break-word
 }
@@ -154,7 +161,7 @@ body{
 </section>
 
 <!-- SEPTIEMBRE -->
-<div class="month">
+<div class="month tachado-completo">
 <div class="month-title">Septiembre 2026</div>
 <div class="weekdays">
 <div class="weekday">Lun</div><div class="weekday">Mar</div><div class="weekday">Mie</div>
@@ -201,7 +208,7 @@ body{
 </div>
 
 <!-- OCTUBRE -->
-<div class="month">
+<div class="month tachado-completo">
 <div class="month-title">Octubre 2026</div>
 <div class="weekdays">
 <div class="weekday">Lun</div><div class="weekday">Mar</div><div class="weekday">Mie</div>
@@ -261,30 +268,30 @@ body{
 </div>
 <div class="calendar">
 <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
-<div class="day"><div class="day-number"><span class="day-name">D</span>1</div></div>
+<div class="day tachado"><div class="day-number"><span class="day-name">D</span>1</div></div>
 <div class="week-sep"></div>
-<div class="day"><div class="day-number"><span class="day-name">L</span>2</div></div>
-<div class="day"><div class="day-number"><span class="day-name">M</span>3</div></div>
-<div class="day"><div class="day-number"><span class="day-name">X</span>4</div><div class="event presencial">Gestion 16-22</div></div>
-<div class="day"><div class="day-number"><span class="day-name">J</span>5</div><div class="event checkpoint">Fintech con Complif 18:30-21:30</div></div>
-<div class="day importante">
+<div class="day tachado"><div class="day-number"><span class="day-name">L</span>2</div></div>
+<div class="day tachado"><div class="day-number"><span class="day-name">M</span>3</div></div>
+<div class="day tachado"><div class="day-number"><span class="day-name">X</span>4</div><div class="event presencial">Gestion 16-22</div></div>
+<div class="day tachado"><div class="day-number"><span class="day-name">J</span>5</div><div class="event checkpoint">Fintech con Complif 18:30-21:30</div></div>
+<div class="day importante tachado">
   <div class="importante-label">PARCIAL</div>
   <div class="day-number"><span class="day-name">V</span>6</div>
   <div class="event parcial">Examen de Seguridad Informática</div>
   <div class="event presencial">Discusión del trabajo de malware · 19-22</div>
 </div>
-<div class="day"><div class="day-number"><span class="day-name">S</span>7</div></div>
-<div class="day"><div class="day-number"><span class="day-name">D</span>8</div></div>
+<div class="day tachado"><div class="day-number"><span class="day-name">S</span>7</div></div>
+<div class="day tachado"><div class="day-number"><span class="day-name">D</span>8</div></div>
 <div class="week-sep"></div>
-<div class="day"><div class="day-number"><span class="day-name">L</span>9</div><div class="event feriado">Feriado por el Papa</div></div>
-<div class="day"><div class="day-number"><span class="day-name">M</span>10</div><div class="event checkpoint">Checkpoint 3</div></div>
-<div class="day"><div class="day-number"><span class="day-name">X</span>11</div><div class="event presencial">Gestion 16-22</div></div>
-<div class="day"><div class="day-number"><span class="day-name">J</span>12</div></div>
-<div class="day"><div class="day-number"><span class="day-name">V</span>13</div></div>
-<div class="day">
+<div class="day tachado"><div class="day-number"><span class="day-name">L</span>9</div><div class="event feriado">Feriado por el Papa</div></div>
+<div class="day tachado"><div class="day-number"><span class="day-name">M</span>10</div><div class="event checkpoint">Checkpoint 3</div></div>
+<div class="day tachado"><div class="day-number"><span class="day-name">X</span>11</div><div class="event presencial">Gestion 16-22</div></div>
+<div class="day tachado"><div class="day-number"><span class="day-name">J</span>12</div></div>
+<div class="day tachado"><div class="day-number"><span class="day-name">V</span>13</div></div>
+<div class="day tachado">
   <div class="day-number"><span class="day-name">S</span>14</div>
 </div>
-<div class="day"><div class="day-number"><span class="day-name">D</span>15</div></div>
+<div class="day tachado"><div class="day-number"><span class="day-name">D</span>15</div></div>
 <div class="week-sep"></div>
 <div class="day"><div class="day-number"><span class="day-name">L</span>16</div></div>
 <div class="day"><div class="day-number"><span class="day-name">M</span>17</div><div class="event entrega">22:00 · Entrega anticipada del trabajo de IA por el campus</div></div>
